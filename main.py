@@ -77,8 +77,8 @@ if __name__ == '__main__':
     parser.add_argument('--arch', type=str, default='conformer'
                         , choices=['resnet', 'vgg','densenet','conformer'])  # resnet, vgg or densenet
     parser.add_argument('--pretrained_model', type=str, default=pretrained_path)  # pretrained backbone model
-    parser.add_argument('--epoch', type=int, default=145)
-    parser.add_argument('--batch_size', type=int, default=1)  # only support 1 now
+    parser.add_argument('--epoch', type=int, default=100)
+    parser.add_argument('--batch_size', type=int, default=10)  # only support 1 now
     parser.add_argument('--num_thread', type=int, default=0)
     parser.add_argument('--load', type=str, default='')  # pretrained JL-DCF model
     parser.add_argument('--save_folder', type=str, default='checkpoints/')
